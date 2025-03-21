@@ -1,0 +1,8 @@
+.search-input::placeholder {
+    color: #999;
+    transition: color 0.3s;
+}
+
+.search-input.dark-mode::placeholder {
+    color: #bbb;
+}

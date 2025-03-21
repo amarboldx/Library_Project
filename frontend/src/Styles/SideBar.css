@@ -1,0 +1,135 @@
+:root {
+    --dark-bg: #212121;
+    --dark-sidebar: #0d0d0d;
+    --dark-text: #ffffff;
+    --dark-border: #303030;
+    --dark-hover: #303030;
+}
+
+.ant-layout.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.ant-layout.dark-mode .ant-layout-sider {
+    background-color: var(--dark-sidebar);
+}
+
+.ant-layout.dark-mode .ant-menu {
+    background-color: var(--dark-sidebar);
+    color: var(--dark-text);
+    border-right: 1px solid var(--dark-border);
+}
+
+.ant-layout.dark-mode .ant-menu-item {
+    color: var(--dark-text);
+}
+
+.ant-layout.dark-mode .ant-menu-item:hover {
+    background-color: var(--dark-hover);
+}
+
+.ant-layout.dark-mode .ant-menu-item-selected {
+    background-color: var(--dark-hover);
+}
+
+.ant-layout.dark-mode .ant-layout-header {
+    background-color: var(--dark-bg);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.ant-layout.dark-mode .ant-layout-content {
+    background-color: var(--dark-bg);
+}
+
+.ant-layout.dark-mode .ant-btn {
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+}
+
+.ant-layout.dark-mode .ant-btn:hover {
+    background-color: var(--dark-hover);
+}
+
+.ant-layout.dark-mode .ant-btn-text {
+    color: var(--dark-text);
+}
+
+.ant-layout.dark-mode .ant-btn-text:hover {
+    background-color: var(--dark-hover);
+}
+
+/* Switch dark styles */
+.ant-layout.dark-mode .ant-switch {
+    background-color: var(--dark-hover);
+}
+
+/* Divider and border dark styles */
+.ant-layout.dark-mode .ant-divider {
+    border-color: var(--dark-border);
+}
+
+/* Dark mode for dropdowns and overlays */
+.ant-dropdown.dark-mode .ant-dropdown-menu {
+    background-color: var(--dark-sidebar);
+    border: 1px solid var(--dark-border);
+}
+
+.ant-dropdown.dark-mode .ant-dropdown-menu-item {
+    color: var(--dark-text);
+}
+
+.ant-dropdown.dark-mode .ant-dropdown-menu-item:hover {
+    background-color: var(--dark-hover);
+}
+
+/* Dark scrollbar styles */
+.ant-layout.dark-mode *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.ant-layout.dark-mode *::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+
+.ant-layout.dark-mode *::-webkit-scrollbar-thumb {
+    background-color: var(--dark-border);
+    border-radius: 4px;
+}
+
+.ant-layout,
+.ant-layout-sider,
+.ant-menu,
+.ant-layout-header,
+.ant-layout-content,
+.ant-btn,
+.ant-switch {
+    transition: all 0.3s ease;
+}
+
+.ant-layout-content {
+    transition: background-color 0.3s ease;
+}
+
+.ant-layout-content.tinted {
+    background-color: rgba(0, 0, 0, 0.05); /* Slight tint */
+}
+
+.ant-layout-sider {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.ant-layout-content {
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+}
+
+.ant-layout-content.shrunk {
+    margin-left: 200px; /* Same width as sidebar */
+}
