@@ -82,7 +82,5 @@ Once set, these environment variables will be available to your backend applicat
 
 For the frontend, you can still configure API endpoints in src/config.js as required.
 
-    ```bash
     Library_Project/frontend/src/components/Config/src.jsx
-    ```
 
