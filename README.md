@@ -34,7 +34,7 @@ The Library Management System is a full-stack web application designed to stream
 ### Prerequisites
 - Java 21
 - Node.js & npm
-- MongoDB installed & running ()
+- MongoDB cluster installed & running
 - Git installed
 - IDE of your choice
 
